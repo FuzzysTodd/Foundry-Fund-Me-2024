@@ -64,3 +64,25 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+
+### Summary.
+The smart contract is called FundMe and it works similar to a wallet. This contract can be funded by users that want to send ETH to it and the owner of the contract can withdraw the funds. This contract can be deployed to any testnet or mainnet, and it can even be deployed locally on Anvil, which is a fictitious blockchain that is created when an RPC-URL is not specified in the terminal. 
+
+### Deploy
+forge script script/DeployFundMe.s.sol
+
+### Testing
+forge test
+or
+forge tet --mt 'testFunctionName'
+
+### Test Coverage
+forge coverage
+
+### Deployment to a Testnet or Mainnet
+It will be needed to set a SEPOLIA_RPC_URL (this is a url of the Sepolia testnet node. You can get setup with a free one from Alchemy) and a PRIVATE_KEY (this can be taken from your Metamask wallet, but please make sure it does not has real funds associated with it, as it is for development purposes only) as environment variables. These variables can be added to a .env file.
+
+### Estimate Gas Costs
+forge snapshot
+

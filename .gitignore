@@ -15,3 +15,13 @@ docs/
 
 broadcast/
 lib/
+
+# Build artifacts
+artifacts/
+*.ipynb
+
+# Remix IDE dependencies
+.deps/
+
+# Gas snapshots
+.gas-snapshot
